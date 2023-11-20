@@ -1,0 +1,15 @@
+body{
+
+    background-color: aliceblue; /* Beige claro */
+    color: #333; /* Gris oscuro para el texto */
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contenedorForm{
+    background-color: rgb(228, 228, 228);
+    width: 500px;
+    border-radius: 5px;
+    border: solid 5px black;
+
+}
