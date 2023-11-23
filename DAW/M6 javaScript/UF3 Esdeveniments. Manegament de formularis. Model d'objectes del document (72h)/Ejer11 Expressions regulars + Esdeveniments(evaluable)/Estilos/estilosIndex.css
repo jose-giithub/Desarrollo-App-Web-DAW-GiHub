@@ -1,0 +1,29 @@
+.container {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+.green {
+    color: #00bb00;
+}
+.center {
+    padding: 20px 0;
+    margin: 10px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
