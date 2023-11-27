@@ -15,8 +15,12 @@ var exrpesionRegext3 = /^((977)\d{6}|(977) \d{3} \d{3}|(97) \d{3} \d{2} \d{2}|(6
 //Añadir la opción de que empiece por +003497.. o +0034 97... opcionalidad es (algo)?
 var exrpesionRegext4 = /^((\+034 )|(\+034)?)((977)\d{6}|(977) \d{3} \d{3}|(97) \d{3} \d{2} \d{2}|(6)\d{8}|(6)\d{2} \d{3} \d{3}|(6)\d{1} \d{3} \d{2} \d{2})$/;
 
-//Contraseña
-var exrpesionRegext5 = /[0-9a-z]|[a-z0-9]{8,}$/;
+
+//contraseña en format letras latinas (también tenga ñ y ç)y números que tenga mas de 8 caracteres 
+//Que empiece por cualquier tipo de carácter del teclado con ñ y ç incluido ^(?=.*\d)(?=.*[a-zçñ]).$ 
+//Ademas le quito los espacios y un mínimo de 8 caracteres
+var exrpesionRegext5 = /^(?=.*\d)(?=.*[a-zçñ]).[^ 	]{8,}$/;
+
 
 // web para verificar https://regexr.com         
 
@@ -56,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     verificarInputValue(inputValue4, icono4, exrpesionRegext4);
   });
   //verificar el quinto input de tipo contraseña en format letras latinas y números que tenga mas de 8 caracteres 
+  //Las letras que están presentes en castellano pero no en Latin son  j, k, w, y, z
   inputValue5.addEventListener("input", function () {
     verificarInputValue(inputValue5, icono5, exrpesionRegext5);
   });
