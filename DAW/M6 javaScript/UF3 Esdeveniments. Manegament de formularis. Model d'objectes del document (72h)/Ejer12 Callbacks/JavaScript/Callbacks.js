@@ -31,9 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
     
         enviar.addEventListener('click', function () {//Capturar el evento cuando se hace click en el botón de enviar
             let eleccionRespuesta = selectElement.value;//guardo que han seleccionado en el select
+            
         
             /**llamo a la función resultado que calcula los dos valores con el operador matemático, el resultado se lo paso al collbacs
-             * que en la llamada sera crear una  función callbacks con un valor dentro 'he puesto resultadoFinal pero podría ser perroVerde
+             * que en la llamada será crear una  función callbacks con un valor dentro 'he puesto resultadoFinal pero podría ser perroVerde
              * ' luego dentro de esta función le pasamos la función que muestra el resultado
              */
             resultado(num1, num2, operador,

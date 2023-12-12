@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>DOM Tutorial</title>
+</head>
+<body>
+    <h1>DOM Lesson one</h1>
+    <p>Hello word!</p>
+
+    <script>
+        document.write("El body té " + document.body.children.length + " fills<br/>");
+        document.write("El primer fill de body és " + document.body.firstElementChild.nodeName + ", i és de tipus " + document.body.firstElementChild.nodeType + " i el contingut és: " + document.body.firstElementChild.innerText + "<br/>");
+        document.write("El segon fill de body és " + document.body.firstElementChild.nextElementSibling.nodeName + "<br/>");
+        document.write("El pare de title és " + document.getElementsByTagName("title")[0].parentNode.nodeName + "<br/>");//por que no usar el document.title?
+        document.write("El primer element del document és " + document.firstElementChild.nodeName + " i aquest element té 2 fills: " + document.firstElementChild.firstElementChild.nodeName + " i " + document.firstElementChild.lastElementChild.nodeName);
+        </script>
+</body>
+
+
+</html>
